@@ -3,7 +3,7 @@ eureka:
     serviceUrl:
       defaultZone: http://peer2:8762/eureka/,http://peer1:8761/eureka/
 server:
-  port: 8769
+  port: 8768
 spring:
   application:
-    name: service-hi
+    name: service-hello

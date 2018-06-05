@@ -11,7 +11,7 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://peer2:8762/eureka/,http://peer3:8763/eureka/
+      defaultZone: http://peer2:8762/eureka/ #,http://peer3:8763/eureka/
 
 ---
 
@@ -28,23 +28,23 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://peer1:8761/eureka/,http://peer3:8763/eureka/
+      defaultZone: http://peer1:8761/eureka/ #,http://peer3:8763/eureka/
 
 ---
 
-server:
-  port: 8763
-spring:
-  profiles: peer3
-  application:
-    name: eureka-server
-eureka:
-  instance:
-    hostname: peer3 #配置主机名
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
+#server:
+#  port: 8763
+#spring:
+#  profiles: peer3
+#  application:
+#    name: eureka-server
+#eureka:
+#  instance:
+#    hostname: peer3 #配置主机名
+#  client:
+#    registerWithEureka: false
+#    fetchRegistry: false
+#    serviceUrl:
+#      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
 
 
